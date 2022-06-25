@@ -3,7 +3,7 @@ import { React } from "react";
 export const Button = ({label, handleClick, backgroundColor, isShadow, size}) => {
     let scale = 1;
     const normalSize = 3.8;
-    if (size == 'lg') scale = 1.5;
+    if (size === 'lg') scale = 1.5;
     let styles = {
         padding: `0.75rem ${normalSize * scale}rem`,
         backgroundColor,
@@ -30,5 +30,6 @@ Button.prototype = {
     label: PropTypes.string,
     style: PropTypes.string,
     handleClick: PropTypes.func,
-    isShadow: PropTypes.boolean
+    isShadow: PropTypes.boolean,
+    backgroundColor: PropTypes.string
 }

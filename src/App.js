@@ -1,9 +1,9 @@
-import { Login } from './ui/components/login/login';
+import Navigation from './context/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <Login isLoading={false} errors={false} label="Enviar"/>
+      <Navigation />
     </div>
   );
 }

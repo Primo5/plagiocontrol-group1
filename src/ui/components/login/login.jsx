@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import '../../../App.css';
 import useForm from "../../../hooks/useForm";
 export const Login = ({isLoading, errors, label}) => {
-    console.log("is loading", isLoading, label);
-    const [form, handlerChangeForm, handlerResetForm] = useForm({username:"" , password: ""});
+    const [ handlerChangeForm] = useForm({username:"" , password: ""});
     const onSubmit = (event) => {
         event.preventDefault();
     }
